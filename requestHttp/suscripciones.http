@@ -1,0 +1,31 @@
+
+@api = http://localhost:3000/suscripciones
+
+### GET ALL
+GET {{ api }}
+
+### GET OBTENER UN REGISTRO
+GET {{api}}/2
+
+### INSERTAR
+POST {{api}}
+Content-Type: application/json
+
+{
+  "lugarDeSuscripcion": "oaaaa",
+  "nombreUsuario": "usertest 3",
+  "contrasena": "ggg"
+}
+
+### ACTUALIZAR
+PUT {{api}}/2
+Content-Type: application/json
+
+{
+  "lugarDeSuscripcion": "update registro 2",
+  "nombreUsuario": "usertest 3",
+  "contrasena": "ggg"
+}
+
+### DELETE
+DELETE {{api}}/5
